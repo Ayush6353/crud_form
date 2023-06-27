@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="main2">
+        <div class="m_2">
+            <form>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control f_name" name="S_fname" id="fname" />
+                        <label for="inputEmail3" id="V_fname" style="color: red;"></label>
+                    </div>
+                </div>
+                <br />
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Middal Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control m_name" id="mname" />
+                        <label for="inputEmail3" id="V_mname" style="color: red;"></label>
+                    </div>
+                </div>
+                <br />
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control l_name" id="lname" />
+                        <label for="inputEmail3" id="V_lname" style="color: red;"></label>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-4">
+                    <label for="qty" class="form-label">selact country</label>
+                    <select id="country" class="form-select t_toy">
+                        <option selected></option>
+                        <option>india</option>
+                        <option>china</option>
+                        <option>pakistan</option>
+                        <option>russia</option>
+                    </select>
+                    <label for="inputEmail3" id="V_country" style="color: red;"></label>
+                </div>
+                <br />
+                <br />
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="Male" />
+                            <label class="form-check-label" for="gridRadios1"> Male </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="gridRadios2"
+                                value="Female" />
+                            <label class="form-check-label" for="gridRadios2"> Female </label>
+                        </div>
+                        <label for="inputEmail3" id="V_gender" style="color: red;"></label>
+                    </div>
+
+                </fieldset>
+                <br />
+                <br />
+                selact your hobby: <br />
+                <input type="checkbox" id="football" value="football" name="hobby" />
+                <label for="football">football</label>
+                <input type="checkbox" id="wallyball" value="wallyball" name="hobby" />
+                <label for="wallyball">wallyball</label>
+                <input type="checkbox" id="chess" value="chess" name="hobby" />
+                <label for="chess">chess</label>
+                <input type="checkbox" id="basketball" value="basketball" name="hobby" />
+                <label for="basketball">basketball</label>
+                <span id="hobby!"></span>
+                <br />
+                <br />
+                <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ============================= serach bar ================================ -->
+
+    <section class="main_search">
+        <div class="container-fluid  m_ser">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" id="s_search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"  id="Search_btn">Search</button>
+            </form>
+        </div>
+    </section>
+
+   <!-- ============================== input table ================================== -->
+
+
+    <section class="maintbl">
+        <table>
+            <thead>
+                <tr>
+                    <td>First name</td>
+                    <td>Middle name</td>
+                    <td>Last name</td>
+                    <td>Country</td>
+                    <td>Hobby</td>
+                    <td>Gender</td>
+                    <td>Edit / Delete</td>
+                </tr>
+            </thead>
+
+            <tbody id="t_table">
+
+            </tbody>
+    </section>
+
+
+    <script src="crud.js"></script>
+</body>
+
+</html>
